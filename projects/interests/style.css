@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: bisque;
+     background-color: rgb(245, 253, 255);
+}
+main {
+    color: rgb(255, 21, 21);
+}
+
+
+p{
+    color: rgb(97, 123, 195);
+}
+header {
+    color: rgb(30, 5, 105);
+
+}
+
+}
+.pink {
+    color: rgb(43, 0, 92);
+}
+#blue {
+    color: rgb(97, 123, 195);
+} 
+#red {
+    color: rgb(255, 21, 21);
+}
+
+span {
+     font-size: 14pt;
+    font-weight: bold;
+}
