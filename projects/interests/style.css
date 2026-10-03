@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif; 
-    color: bisque;
+    color: rgb(66, 43, 14);
      background-color: rgb(205, 238, 241);
 }
 main {
@@ -16,6 +16,8 @@ header {
 
 }
 
+#norm {
+    color:  rgb(193, 95, 128);
 }
 .pink {
     color: rgb(43, 0, 92);
