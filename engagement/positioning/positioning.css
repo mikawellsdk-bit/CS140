@@ -1,0 +1,37 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.templefig {
+    border: 2px solid black;
+    width: 150px;idth
+    overflow: hidden;
+    float: :right
+}
+#floatfig {
+    float:right
+}
+.templefig img {
+    width: 100%;
+}
+
+.enforcer {
+    clear: both;
+}
+
+#absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#relative {
+    border: 10px solid rgb(103, 148, 190);
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+#fixed {
+    border: 20px solid pink;
+  position: relative;
+  top: 30px;
+  left: 5%;
+}
