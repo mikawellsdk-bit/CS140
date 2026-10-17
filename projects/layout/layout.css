@@ -26,6 +26,7 @@ h1 {
     margin: 0 auto;
     line-height: 30px;
     text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav a {
