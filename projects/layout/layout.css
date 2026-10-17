@@ -1,0 +1,74 @@
+body {
+    background-image: url(more\ icecream.jpg);
+    background-repeat:  no-repeat;
+    background-position: top right;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    text-shadow: 2px white
+}
+
+main{
+    border: thin solid rgb(76, 159, 178)
+}
+
+h1 {
+    color: rgb(232, 255, 255);
+  text-shadow: 6px 7px 9px rgb(210, 119, 191);
+   text-align: center;
+    background-color:rgb(140, 232, 235)
+
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+    color: rgb(54, 41, 135);
+    margin-left: 100px;
+    
+}
+
+nav a:hover {
+      background-color: white;
+      color:rgb(53, 139, 110)
+}
+
+
+.icecreamfig {
+    text-align: center;
+    img {
+  width: 100px;
+  height: 100px;
+    border: 2px solid rgb(104, 236, 243);
+    width: 150px;idth
+    overflow: hidden;
+    float: :right
+
+}
+  
+.love 
+  width: 200px;
+  height: 260px;
+  margin: 40px;
+  padding: 45px;
+  border: 6px solid pink;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px red;
+  background-color : rgb(231, 245, 146)
+}
+.flavor {
+    background-color: rgb(251, 183, 243) ;
+     margin: 20px;
+     border-radius: 20px;
+     width: 900px;
+  height: 560px;
+}
