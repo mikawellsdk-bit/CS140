@@ -1,0 +1,37 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.card {
+    border: 5px solid #f21889;
+    box-shadow: 6px 7px 1px pink
+}    
+   
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 10px
+}
+
+.motha {
+    display: grid;
+    grid-template-areas:"header header header header" "main main . sidebar" "footer footer footer footer";
+    gap:10px;
+}
+
+.cardkid {
+    border: 1px solid pink
+    
+
+}
+.KidA {
+   grid-area: header;
+}
+.KidB {
+grid-area: sidebar;
+}
+KidC{
+    grid-area: main;
+}
+KidD {
+    grid-area: footer;
+}
