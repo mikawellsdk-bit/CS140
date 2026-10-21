@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    border: 6px solid pink;
+    padding: 5px;
+    width: 50px;
+}
+.Parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*flex-flow: row wrap; comment- ignored*/
+    gap: 10px;
+}
