@@ -7,6 +7,17 @@ body {
     padding: 5px;
     width: 50px;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(230, 26, 121);
+    color:azure
+    /*border-bottom: thin solid whit;*/
+}
 .Parent {
     display: flex;
     flex-wrap: wrap;
