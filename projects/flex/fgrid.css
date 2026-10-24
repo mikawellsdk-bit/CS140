@@ -1,0 +1,66 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(236, 255, 255);
+    color: rgb(5, 65, 65);
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    min-height: 300px;
+    padding: 20px;
+    background-color: rgb(185, 247, 251);
+    float: left;
+}
+
+main{
+    padding: 10px;
+    margin-right: auto;
+
+}
+.card {
+    display: flex;
+    border: 6px solid rgb(186, 228, 226);
+    width: auto;
+    min-height: 100px;
+    background-image: url(wavesss.jpg);
+    background-size: auto;
+    background-position: center;
+    box-sizing: border-box;
+    overflow-wrap:break-word;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 10px 10px 14px rgb(6, 57, 72);
+}
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color:rgb(19, 51, 51)
+}
+.Parent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+
+footer {
+    background-color: rgb(212, 252, 248);
+    clear: both;
+    padding: 20px;
+}
+
+.footer nav {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
