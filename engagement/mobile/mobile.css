@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin:0;
 }
 
@@ -8,7 +8,7 @@ html{
 }
 
 header {
-    background-color: rgb(178, 231, 231);
+    background-color: rgb(210, 255, 255);
 }
 
 headerh1{
@@ -17,15 +17,22 @@ headerh1{
 
 nav {
     display:flex;
-    background-color:rgb(128, 203, 194);
+    background-color:rgb(255, 219, 246);
     justify-content: space-around;
 }
 
 nav a{
     display: block;
     padding: 5px 20px;
-    background-color: rgb(4, 13, 13);
-    color:antiquewhite
+    background-color: rgb(213, 74, 164);
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color:white;
+    color: black; 
 }
 .mainow {
     display: flex;
@@ -36,7 +43,7 @@ main{
 }
 
 .card {
-    border: 1px solid black;
+    border: 3px solid rgb(255, 37, 124);
     border-radius: 10px;
     width: 250px;
     overflow: hidden;
@@ -53,11 +60,29 @@ main{
 .card a {
     display: block;
     padding: 10px;
-    background-color: rgb(255, 228, 209);
+    background-color: rgb(201, 77, 116);
     width: 60%;
     margin-bottom: 0px auto 5px auto;
     border-radius: 5px;
-    color: aliceblue;
+    color: rgb(234, 245, 255);
+}
+
+@media ONLY screen and (max-width: 680px) {
+    .mainow {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    .sidebar{
+    width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+    .card {
+        width: 95%;
+    }
 }
 
 @media print{
@@ -73,4 +98,12 @@ main{
     .card{
         break-inside: avoid
     }
+}
+
+nav {
+    flex-direction: column;
+}
+nav a {
+    border-bottom: 1px solid white;
+    padding: 15px;
 }
