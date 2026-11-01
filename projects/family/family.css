@@ -4,7 +4,7 @@ body{
 }
 
 html{
-    margin 0;
+    margin: 0;
 }
 
 header {
@@ -34,7 +34,7 @@ nav a:hover {
     background-color:white;
     color: black; 
 }
-.mainow {
+.mainrow {
     display: flex;
 }
 
@@ -45,12 +45,12 @@ nav a:hover {
 main{
     width:75%;
 }
-
 .article-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .article {
     border: 3px solid rgb(255, 37, 124);
     border-radius: 10px;
@@ -68,14 +68,14 @@ main{
     padding: 10px;
     background-color: rgb(231, 189, 202);
     width: 60%;
-    margin-bottom: 0px auto 5px auto;
+    margin: 0px auto 5px auto;
     border-radius: 5px;
     color: rgb(234, 245, 255);
 }
 
 
-@media ONLY screen and (max-width: 680px) {
-    .mainow {
+@media only screen and (max-width: 680px) {
+    .mainrow {
     flex-direction: column-reverse;
     align-items: center;
     }
@@ -87,7 +87,7 @@ main{
     main {
         width: 100%;
     }
-    .a {
+    .article {
         width: 95%;
     }
 }
