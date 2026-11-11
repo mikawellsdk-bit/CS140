@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -11,20 +12,18 @@
     </header>
     <main>
         <form action="formprocessing.html" method="Post">
+            <fieldset>
             <div class="form-row">
              <label for="personname">Full Name</label>
              <input id="personname" name="Full Name" placeholder="Full Name">
             </div>
             <div class="form-row">
              <label for="Email">Email</label>
-             <input type="text" name="Email" id="Email" value="example@byuh.edu">
+             <input type="email" name="Email" id="Email" value="example@byuh.edu">
             </div>
             <div class="form-row">
              <label for="password">Password</label>
              <input type="password" name="pass" id="password">
-            </div>
-            <div class="form-row">
-              <input type="submit">
             </div>
             <div class="form-row">
             <label>Gender</label>
@@ -34,62 +33,44 @@
                 <option>Other</option>
             </select>
             </div>
+             <div class="form-row">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
             <div class="form-row">
                 <label>yes or no</label>
                 <input type="radio" name="customer" value="yes"> Yes
                 <input type="radio" name="customer" value="no"> No
             </div>
-
             <div class="form-row">
                 <label>checkboxes</label>
                 <input type="checkbox" name="need" value="website"> Website
                 <input type="checkbox" name="need" value="logo"> Logo
             </div>
-
             <div class="form-row">
-                <label for="message"><textarea name="" id=""></textarea></label>
+               <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Write message here..."></textarea>
             </div>
+            <div class="form-row">
+              <input type="submit">
+            </div>
+            </fieldset>
             </form>
         
         <h1>EG Questions</h1>
             <ul>
-            <li><b>Action:</b> Tells the form where to send information.</li>
-            <li><b>Method:</b> Tells the form how to send information.</li>
-            <li><b>POST vs GET:</b>
+            <li><b>What are different ways to style your form?:</b> Tells the form where to send information.</li>
+            <li><b>Why does the professor like to use flex?:</b> Tells the form how to send information.</li>
+            <li><b>What makes for a good mobile form?:</b>
                 <ul>
                 <li>GET = Information shows in the URL.</li>
                 <li>POST = Information is sent in the background.</li>
                 </ul>
             </li>
-            <li><b>Preset value vs placeholder:</b>
-                <ul>
-                <li>Text box: value fills in text. Placeholder gives a hint.</li>
-                <li>Textarea: Text goes between the opening and closing tags. Placeholder gives a hint.</li>
-                <li>Select box: Use selected to choose a default option.</li>
-                <li>Checkbox: Use checked to select it by default.</li>
-                <li>Radio button: Use checked to select it by default.</li>
-                </ul>
-            </li>
-            <li><b>HTML5 added input types:</b>
-                <ul>
-                <li>email</li>
-                <li>url</li>
-                <li>tel</li>
-                <li>search</li>
-                <li>number</li>
-                <li>range</li>
-                <li>date</li>
-                <li>month</li>
-                <li>week</li>
-                <li>time</li>
-                <li>datetime-local</li>
-                <li>color</li>
-                </ul>
             </ul>  
     </main>
     <footer>
-        &copy; 20206 Mika Wells
+        &copy; 2026 Mika Wells
     </footer>
     
 </body> 
