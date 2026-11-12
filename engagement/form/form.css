@@ -2,9 +2,9 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 fieldset {
-    background-color: aquamarine;
+    background-color: rgb(252, 230, 248);
     border: thin solid black;
-    box-shadow: 3px 3px 3px rgb(44, 87, 63);
+    box-shadow: 3px 3px 3px rgb(188, 244, 213);
 }
 .form-row {
     margin:10px 0;
@@ -23,19 +23,33 @@ fieldset {
     text-align: right;
 }
 
-.form-row input:focus {
-    background-color: rgb(38, 35, 211);
+.form-row input:not([type="submit"]) {
+    padding:5px;
+    background-color: rgb(187, 233, 218);
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    background-color: rgb(255, 182, 238);
+}
+fieldset {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
 }
 .spacer {
     width: 150px;
     text-align: right;
 }
 
-@media ONLY screen AND (max-width:500px) {
+@media only screen and (max-width:500px) {
     .form-row, .check-row {
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .form-row label {
         text-align: left;
+        width: auto;
     }
 }

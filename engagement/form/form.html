@@ -12,7 +12,8 @@
     </header>
     <main>
         <form action="formprocessing.html" method="Post">
-            <fieldset>
+         <fieldset>
+            <legend>About You</legend>
             <div class="form-row">
              <label for="personname">Full Name</label>
              <input id="personname" name="Full Name" placeholder="Full Name">
@@ -26,8 +27,8 @@
              <input type="password" name="pass" id="password">
             </div>
             <div class="form-row">
-            <label>Gender</label>
-            <select name="service">
+            <label for="gender">Gender</label>
+            <select name="service" id="gender">
                 <option>Female</option>
                 <option>Male</option>
                 <option>Other</option>
@@ -37,36 +38,41 @@
                 <label for="birthday">Birthday</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
+            <fieldset>
+                <legend> Are you a new customer? </legend>
             <div class="form-row">
-                <label>yes or no</label>
-                <input type="radio" name="customer" value="yes"> Yes
-                <input type="radio" name="customer" value="no"> No
+                <label>Choose one</label>
+                <input type="radio" name="customer" value="yes" id="customer">
+                <label for="customer">Yes</label>
+
+                <input type="radio" name="customer" value="no" id="customer-no">
+                <label for="customer-no">No</label>
             </div>
+            </fieldset>
             <div class="form-row">
-                <label>checkboxes</label>
-                <input type="checkbox" name="need" value="website"> Website
-                <input type="checkbox" name="need" value="logo"> Logo
-            </div>
+                <label>Services</label>
+                <input type="checkbox" name="need" value="website" id="website">
+                <label for="website">Website</label>
+
+                <input type="checkbox" name="need" value="logo" id="logo">
+                <label for="logo">Logo</label>
+                </div>
             <div class="form-row">
-               <label for="message">Message</label>
+                <label for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Write message here..."></textarea>
             </div>
             <div class="form-row">
-              <input type="submit">
+            <div class="spacer"></div>
+              <input type="submit" value="signup">
             </div>
-            </fieldset>
-            </form>
+         </fieldset>
+        </form>
         
         <h1>EG Questions</h1>
             <ul>
-            <li><b>What are different ways to style your form?:</b> Tells the form where to send information.</li>
-            <li><b>Why does the professor like to use flex?:</b> Tells the form how to send information.</li>
-            <li><b>What makes for a good mobile form?:</b>
-                <ul>
-                <li>GET = Information shows in the URL.</li>
-                <li>POST = Information is sent in the background.</li>
-                </ul>
-            </li>
+            <li><b>What are different ways to style your form?:</b> Colors, borders, backgrounds, spacing, fonts, and shadows.</li>
+            <li><b>Why does the professor like to use flex?:</b> Flex makes it easier to line up labels and form fields.</li>
+            <li><b>What makes for a good mobile form?:</b> Large buttons, readable text, enough spacing, and fields that fit the screen.</li>
             </ul>  
     </main>
     <footer>
