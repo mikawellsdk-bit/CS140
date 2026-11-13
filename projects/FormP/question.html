@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <header>
+     <h1> Humanitarian Trips </h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+        <fieldset>
+            <legend><b>New Membership!</b></legend>
+            <div class="form-row">
+             <label for="personname">Full Name</label>
+             <input type="text" id="personname" name="Full Name" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="example@byuh.edu">
+            </div>
+            <div class="form-row">
+             <label for="password">Password</label>
+             <input type="password" name="pass" id="password">
+            </div>
+             <div class="form-row">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> <b>Humanitarian Trips</b> </legend>
+                <div class="form-row">
+                    <label for="start">Preferred Start Date</label>
+                    <input type="date" id="start" name="start date">
+                </div>
+                <div class="form-row">
+                    <label for="end">Preferred End Date</label>
+                    <input type="date" id="end" name="enddate">
+                </div>
+                <div class="form-row">
+                    <label for="Countries"> Countries Available</label>
+                    <select name="Countries" id="Countries">
+                        <option>Costa Rica</option>
+                        <option>Ghana</option>
+                        <option>Nepal</option>
+                        <option>Philippines</option>
+                        <option>Peru</option>
+                        <option>Thailand</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <legend><b>What type of volunteering interests you?</b></legend>
+                        <input type="checkbox" name="interests" value="Education" id="Education">
+                        <label for="Education">Education & Teaching</label>
+                        <input type="checkbox" name="interests" value="Environmental" id="Environmental">
+                        <label for="Environmental">Environmental Conservation</label>
+                        <input type="checkbox" name="interests" value="Development" id="Development">
+                        <label for="Development">Community Development</label>
+                        <input type="checkbox" name="interests" value="Support" id="Support">
+                        <label for="Support">Healthcare Support</label>
+                        <input type="checkbox" name="interests" value="Welfare" id="Welfare">
+                        <label for="Welfare">Animal Welfare</label>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <legend> <b>How old are you?</b></legend>
+                    <input type="radio" name="age" value="18-21" id="age1">
+                    <label for="age1">18-21</label>
+
+                    <input type="radio" name="age" value="21-30" id="age2">
+                    <label for="age2">21-30</label>
+
+                    <input type="radio" name="age" value="30+" id="age3">
+                    <label for="age3">30+</label>
+
+                    <input type="radio" name="age" value="Senior" id="age4">
+                    <label for="age4">Senior</label>
+                    </fieldset> 
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <legend> <b>Travel Companions?</b></legend>
+                    <input type="checkbox" name="need" value="Solo" id="Solo">
+                    <label for="Solo">Solo</label>
+                    <input type="checkbox" name="need" value="Duo" id="Duo">
+                    <label for="Duo">Duo</label>
+                    <input type="checkbox" name="need" value="Group" id="Group">
+                    <label for="Group">Group</label>
+                    </fieldset> 
+                </div>
+                <div class="form-row">
+                    <label for="skills">Skill Sets? </label>
+                    <textarea id="skills" name="skills" placeholder="What skills or experiences would you bring?"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="Inspirations">Inspirations?</label>
+                    <textarea id="Inspirations" name="Inspirations" placeholder="What inspired you to volunteer?"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="message">Get to know you!</label>
+                    <textarea id="message" name="message" placeholder="Is there anything else you'd like us to know?"></textarea>
+                </div>
+                <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Apply">
+                </div>
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; 2026 Mika Wells
+    </footer>
+    
+</body> 
+</html>

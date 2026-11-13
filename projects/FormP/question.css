@@ -1,0 +1,104 @@
+
+header {
+    background-color: rgb(8, 75, 38);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(97, 162, 182);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+fieldset {
+    background-color: rgb(97, 162, 182);
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(8, 75, 38);
+}
+.form-row {
+    margin:10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row, .check-row {
+    margin:10px 0;
+    display: flex;
+    gap: 10px; 
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-row select {
+    background-color: rgb(138, 213, 198);
+    padding: 8px;
+    border: 1px solid rgb(8, 75, 38);
+}
+.form-row input:not([type="submit"]) {
+    padding:5px;
+    background-color: rgb(138, 213, 198);
+}
+.form-row input[type="checkbox"] {
+    accent-color: rgb(26, 40, 143);
+    width: 17px;
+    height: 17px;
+}
+
+.form-row textarea {
+    background-color: rgb(138, 213, 198);
+    padding: 8px;
+    border: 1px solid rgb(8, 75, 38);
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    background-color: rgb(203, 251, 211);
+}
+fieldset {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background-color: rgb(8, 75, 38);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+        width: auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
