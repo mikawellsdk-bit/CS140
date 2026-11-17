@@ -6,12 +6,37 @@
     <title>form</title>
     <link rel="stylesheet" href="form.css">
 </head>
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const first = document.getElementById("firstName").value;
+        const last = document.getElementById("lastName").value;
+        const age = document.getElementById("age").value;
+
+        if (!first || !last) {
+            alert("please provide your full name.");
+            return;
+        }
+
+        if (!age || age< 18) {
+            alert("you must be 18 years or older to submit this form.");
+            return;
+        }
+
+        const data = {
+            firstName: first,
+            lastName: last,
+            age: age
+        }
+    console.log(data);
+    });
+</script>
 <body>
     <header>
      <h1> mika's webb design </h1>
     </header>
     <main>
-        <form action="formprocessing.html" method="Post">
+        <form  action="formprocessing.html" method="Post" id="signup-form">
          <fieldset>
             <legend>About You</legend>
             <div class="form-row">
@@ -67,17 +92,18 @@
             </div>
          </fieldset>
         </form>
-        
+
         <h1>EG Questions</h1>
             <ul>
-            <li><b>What are different ways to style your form?:</b> Colors, borders, backgrounds, spacing, fonts, and shadows.</li>
-            <li><b>Why does the professor like to use flex?:</b> Flex makes it easier to line up labels and form fields.</li>
-            <li><b>What makes for a good mobile form?:</b> Large buttons, readable text, enough spacing, and fields that fit the screen.</li>
-            </ul>  
+            <li><b>What is JavaScript? How did it get its name?:</b> Javascript makes websites interactive and it was got its name because java is different programming languages .</li>
+            <li><b>What are the two ways you can run JavaScript?:</b> it can run on a web browser or a server</li>
+            <li><b>What is jQuery? Is it still popular today?:</b> jQuery is a JavaScript library that makes common tasks easier, its popular but there are more modern ones available </li>
+            <li><b>What is the most popular front-end js library today?:</b> React is the most popular javascript library.</li> 
+            <li><b>How does your code prevent the form from being submitted? Why do we need to prevent it?:</b>  The JavaScript uses event.preventDefault() to stop the browser's normal form submission wihut reloading or leaving the page. preventing the default action lets javascript check the info first, collect the form fields into and opject and then display the results </li>
+            </ul>
     </main>
     <footer>
         &copy; 2026 Mika Wells
     </footer>
-    
 </body> 
 </html>
