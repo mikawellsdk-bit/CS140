@@ -6,37 +6,12 @@
     <title>form</title>
     <link rel="stylesheet" href="form.css">
 </head>
-<script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        const first = document.getElementById("firstName").value;
-        const last = document.getElementById("lastName").value;
-        const age = document.getElementById("age").value;
-
-        if (!first || !last) {
-            alert("please provide your full name.");
-            return;
-        }
-
-        if (!age || age< 18) {
-            alert("you must be 18 years or older to submit this form.");
-            return;
-        }
-
-        const data = {
-            firstName: first,
-            lastName: last,
-            age: age
-        }
-    console.log(data);
-    });
-</script>
 <body>
     <header>
      <h1> mika's webb design </h1>
     </header>
     <main>
-        <form  action="formprocessing.html" method="Post" id="signup-form">
+        <form  action="formprocessing.html" method="Post" id="myform">
          <fieldset>
             <legend>About You</legend>
             <div class="form-row">
@@ -44,8 +19,8 @@
              <input id="personname" name="Full Name" placeholder="Full Name">
             </div>
             <div class="form-row">
-             <label for="Email">Email</label>
-             <input type="email" name="Email" id="Email" value="example@byuh.edu">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" value="example@byuh.edu">
             </div>
             <div class="form-row">
              <label for="password">Password</label>
@@ -105,5 +80,25 @@
     <footer>
         &copy; 2026 Mika Wells
     </footer>
+    <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("personname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (!name || !email || !password) {
+            alert("Please complete your name, email, and password.");
+            return;
+        }
+
+       const data = {
+            name: name,
+            email: email,
+            password: password
+        }
+    console.log(data);
+    });
+</script>
 </body> 
 </html>
