@@ -13,6 +13,7 @@
     <main>
         <form  action="formprocessing.html" method="Post" id="myform">
          <fieldset>
+            <div class="message"></div>
             <legend>About You</legend>
             <div class="form-row">
              <label for="personname">Full Name</label>
@@ -58,8 +59,8 @@
                 <label for="logo">Logo</label>
                 </div>
             <div class="form-row">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Write message here..."></textarea>
+                <label for="text=">text</label>
+                <textarea id="text" name="text" placeholder="Write message here..."></textarea>
             </div>
             <div class="form-row">
             <div class="spacer"></div>
@@ -70,19 +71,21 @@
 
         <h1>EG Questions</h1>
             <ul>
-            <li><b>What is JavaScript? How did it get its name?:</b> Javascript makes websites interactive and it was got its name because java is different programming languages .</li>
-            <li><b>What are the two ways you can run JavaScript?:</b> it can run on a web browser or a server</li>
-            <li><b>What is jQuery? Is it still popular today?:</b> jQuery is a JavaScript library that makes common tasks easier, its popular but there are more modern ones available </li>
-            <li><b>What is the most popular front-end js library today?:</b> React is the most popular javascript library.</li> 
-            <li><b>How does your code prevent the form from being submitted? Why do we need to prevent it?:</b>  The JavaScript uses event.preventDefault() to stop the browser's normal form submission wihut reloading or leaving the page. preventing the default action lets javascript check the info first, collect the form fields into and opject and then display the results </li>
+            <li><b>What is AJAX?:</b>AJAX lets a website get information without reloading the whole page.</li>
+            <li><b>Why do you put your JS Code in a separate file?:</b>It keeps the code organized and easier to edit. </li>
+            <li><b>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?:</b> Open Inspect, click Console, and look for red errors. Click an error to find its line number.</li>
+            <li><b>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors?:</b> they should work?</li> 
             </ul>
     </main>
     <footer>
         &copy; 2026 Mika Wells
     </footer>
     <script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
+    const form = document.getElementById("myform");
+
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
+
         const name = document.getElementById("personname").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
@@ -91,13 +94,27 @@
             alert("Please complete your name, email, and password.");
             return;
         }
-
-       const data = {
+        const data = {
             name: name,
             email: email,
             password: password
-        }
-    console.log(data);
+        };
+        console.log(data);
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "submit.json", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+
+                document.getElementById("message").textContent = response.message;
+
+                form.reset();
+
+            } else if (xhr.readyState === 4) {
+                alert("Error submitting form.");
+            }
+        };
+        xhr.send();
     });
 </script>
 </body> 
