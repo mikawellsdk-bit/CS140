@@ -1,34 +1,45 @@
-body{
+
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 iframe {
-    border:0;
+    border: 0;
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
 }
 
 #LaieTemple {
     width: 350px;
+    max-width: 100%;
     margin: 0;
     border: thin solid black;
     box-shadow: 5px 5px 3px grey;
-    transform: translate( 150px,50px);
-    transform: rotate (8deg);
+    transform: translate(150px, 50px) rotate(8deg);
 }
 
-##LaieTemple img {
-    width: 180%;
+#LaieTemple img {
+    width: 100%;
+    height: auto;
 }
 
 .btn {
-    display: black;
+    display: block;
     padding: 10px;
     color: aqua;
     background-color: rgb(127, 159, 255);
     width: 110px;
-    text-align:center;
+    text-align: center;
     text-decoration: none;
-    transition: background-color 3s ease-in-out;
-    transition-delay: 2s;
+    transition: all 0.5s ease-in-out;
 }
-.btn :hover{
-    background-color:rgb(167, 208, 214)
+
+.btn:hover {
+    background-color: rgb(167, 208, 214);
+    transform: scale(1.1);
 }
